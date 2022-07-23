@@ -1,0 +1,46 @@
+version: "3.1"
+stories:
+- story: nlu_fallback_triggered
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+- story: Jobs
+  steps:
+  - intent: intent_Jobs
+  - action: utter_Jobs
+- story: Library
+  steps:
+  - intent: intent_Library
+  - action: utter_Library
+- story: cafeteria
+  steps:
+  - intent: intent_cafeteria
+  - action: utter_cafeteria
+- story: Immabescheinigung
+  steps:
+  - intent: intent_Immabescheinigung
+  - action: utter_Immabescheinigung
+- story: classes_earlier
+  steps:
+  - intent: intent_classes_earlier
+  - action: utter_classes_earlier
+- story: eduroam
+  steps:
+  - intent: intent_eduroam
+  - action: utter_eduroam
+- story: developer
+  steps:
+  - intent: intent_developer
+  - action: utter_developer
+- story: costs
+  steps:
+  - intent: intent_costs
+  - action: utter_costs
+- story: number_of_students
+  steps:
+  - intent: intent_number_of_students
+  - action: utter_number_of_students
+- story: location_room
+  steps:
+  - intent: intent_location_room
+  - action: utter_location_room

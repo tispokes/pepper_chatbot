@@ -1,0 +1,16 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "3.1"
+stories:
+- story: intent_number_of_students
+  steps:
+  - user: |
+      Wie viele Leute sind an der OHM eingeschrieben?
+    intent: intent_number_of_students
+  - action: utter_number_of_students
+- story: intent_developer
+  steps:
+  - user: |
+      Wer sind deine Entwickler?
+    intent: intent_developer
+  - action: utter_developer

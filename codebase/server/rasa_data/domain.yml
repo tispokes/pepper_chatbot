@@ -1,0 +1,47 @@
+version: '3.1'
+
+intents:
+  - nlu_fallback
+  - intent_Jobs
+  - intent_Library
+  - intent_cafeteria
+  - intent_Immabescheinigung
+  - intent_classes_earlier
+  - intent_eduroam
+  - intent_developer
+  - intent_costs
+  - intent_number_of_students
+  - intent_location_room
+
+responses:
+  utter_fallback:
+    - text: "[bored] Das habe ich leider nicht verstanden. Kannst du das etwas umformulieren? [despairing]"
+    - text: "[ashamed] Leider kann ich das nicht beantworten. Bitte probiere etwas anderes. [crazy]"
+    - text: "[think] Meine Antworten sind begrenzt, bitte stelle die richtige Frage. [sun]"
+  utter_Jobs:
+    - text: Die [above] Jobaussichten nach einem Informatikstudium sind generell sehr gut, da praktisch in jedem Bereich Informatiker benötigt werden. Welche Tätigkeiten im Beruf genau verlangt werden, hängt immer vom Arbeitgeber, der Branche bzw. der Abteilung ab.
+    - text: Du wirst einen Job finden [above]  der dir Spaß macht und dich fordert. Aber mach doch erstmal dein Studium zu Ende.
+  utter_Library:
+    - text: Informationen zur [bow] Bibliothek der TH Nürnberg, wie Öffnungszeiten und Informationen zur Ausleihe findest du auf der Webseite der TH Nürnberg.
+    - text: Es gibt eine große [but] Bibliothek am Kesslerplatz sowie eine kleine hier am Standort. Mehr Informationen findest du auf der Webseite der TH.
+  utter_cafeteria:
+    - text: Alle Informationen zu Mensen [cloud] und Cafeterien, wie zum Beispiel Speisepläne oder Öffnungszeiten findest du der Webseite der TH.
+    - text: Es gibt eine kleine Mensa [cogitate] im Gebäude \tn=spell\\spell=100\hq \tn=normal\ gegenüber. Sowie eine große Mensa am Kesslerplatz.
+    - text: Du hast Hunger? [down] Dann gehe in den Keller im Gebäude neben an. Da befindet sich eine Mensa. Guten Appetit.  
+  utter_Immabescheinigung:
+    - text: Deine Immatrikulationsbescheinigung [call] kannst du im Study Ohm unter Bescheinigungen herunterladen.
+    - text: Deine persönliche Immatrikulationsbescheinigung [afford] gibt es zum herunterladen auf der Webseite von Study Ohm.
+  utter_classes_earlier:
+    - text: Generell besteht die Möglichkeit [beseech] Fächer und Klausuren vorzuziehen, wenn es dein Studien- oder Vorlesungsplan zulässt. Allerdings musst Du dich dafür im richtigen Studienabschnitt befinden. Ab dem Erreichen von 38 ECTS rückt man in den zweiten Studienabschnitt vor.
+  utter_eduroam:
+    - text: Es gibt einen WLAN-Zugang [becalm] für Angehörige der Hochschule, wie auch für Gäste anderer Hochschulen. Informationen, wie man sich damit verbindet, findest du auf der offiziellen Webseite der TH Nürnberg.
+  utter_developer:
+    - text: Die Software [back] für dieses Modul wurde von einem Studenten im Rahmen der Bachelor Arbeit entwickelt. [winner]
+  utter_costs:
+    - text: Pro Semester ist lediglich ein Studentenwerksbeitrag in Höhe von knapp 117 [all] Euro zu zahlen. Mehr Informationen zu Lebensunterhaltungskosten, Finanzierung, Bafög und Stipendien findest du auf der Webseite der TH Nürnberg
+    - text: Pro Semester bist du mit knapp 117 [blank] Euro dabei. Mehr Informationen zu Lebensunterhaltungskosten, Finanzierung, Bafög und Stipendien findest du auf der Webseite der TH Nürnberg
+  utter_number_of_students:
+    - text: Im Sommersemester 2022 gibt es insgesamt 11891 [agitated] Studierende. Davon 988 an der Fakultät Informatik. Bist du einer davon?
+    - text: Die TH Nürnberg hat derzeit insgesamt 11891 [agitated] Studirende. Details kannst du auf der Webseite der TH Nürnberg nachschauen.
+  utter_location_room:
+    - text: Eine Übersicht [appease] über alle Standorte der Hochschule findest du Auf der Webseite der TH Nürnberg. Der erste Buchstabe der Raumbezeichnung gibt den Standort an. Du befindest dich im Gebäude HW an der Hohfederstraße.

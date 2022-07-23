@@ -1,0 +1,245 @@
+version: "3.1"
+nlu:
+- intent: nlu_fallback
+  examples: |
+    - Eine Pizza Salami bitte
+    - Eine Pizza Schinken bitte
+    - Wo kann ich meine Noten einsehen?
+    - Wo finde ich meine Noten?
+    - Wo sehe ich meine Noten?
+    - Warum ist die Banane krumm?
+    - Wo sehe ich meine Prüfungsergebnisse?
+    - 1 + 2
+    - 1 + 2 = ?
+    - Who's the US President?
+    - Gibt es Parkplätze an der Hochschule?
+    - Wo kan nich Parken?
+    - Wo stelle ich mein Auto ab?
+    - Parkplätze
+    - Kann ich ein Auslandssemester machen?
+    - Möglichkeit eines Auslandssemesters?
+    - Kann ich im Ausland studieren?
+    - Kann ich in einem anderen Land studieren?
+    - Auslandsseemster
+    - Sind dieses Semester Hochschulwahlen?
+    - Wann wird gewählt
+    - Wann sind Hochschulwahlen
+    - Hochschulwahlen
+    - Wie funktionieren Hochschulwahlen
+    - Wie ist die E-Mail von Professor?
+    - E-Mail Prof
+    - E-Mail Professor
+    - TechFak
+    - Technische Fakultät
+    - Wie viel Uhr ist es?
+    - Wie ist die Uhrzeit?
+    - Wie spät ist es?
+    - Sag mir die Uhrzeit
+    - Wie viel Uhr haben wir?
+    - email professor
+    - einnichtbekanntertext
+    - Liest Jens das ?
+    - läde mir pornos herunter
+    - nürnberg
+    - 1+1=?
+    - 1 + 1 = ?
+- intent: intent_Jobs
+  examples: |
+    - Welche Jobs kann ich nach dem Studium ausüben?
+    - Was kann ich nach dem Studium machen?
+    - was sind die Jobaussichten nach dem Studium?
+    - Welche Berufe kann ich danach ausüben?
+    - Was kann ich mit dem Studium machen?
+    - Wie gut sind die Jobaussichten nach dem Studium?
+    - Wie gut sind die Jobaaussichten?
+    - Was sind die Berufsmöglichkeiten nach dem Studium?
+    - Was macht ein Informatiker?
+    - Was sind mögliche Berufe nach dem Studium?
+    - Welche kann ich nach dem Studium machen?
+    - Was sind die Arbeitsbereiche von Wirtschaftsinformatikern?
+- intent: intent_Library
+  examples: |
+    - Wo ist die Bibliothek?
+    - Wo ist die Bib?
+    - Wie funktioniert die Bib?
+    - Gibt es eine Bib?
+    - Wie funktioniert das Ausleihen von Büchern?
+    - Wie kann ich mir in der Bibliothek etwas ausleihen?
+    - Wie funktioniert die Bibliothek?
+    - Was finde ich in der Biblioethek?
+    - Gibt es eine Bibliothek?
+    - wo ist die bib
+- intent: intent_cafeteria
+  examples: |
+    - Gibt es eine Mensa?
+    - Wo ist die Mensa?
+    - Was gibt es in der Mensa?
+    - Welches Essen gibt es in der Mensa?
+    - Gibt es eine Cafeteria?
+    - Kann man in der Hochschule essen?
+    - Gibt es was zu Essen?
+    - GIbt es eine Mensa?
+    - was gibt es in der mensa
+    - was gibt es in der mensa?
+- intent: intent_Immabescheinigung  
+  examples: |
+    - Woher bekomm ich meine Immatriuklationsbescheinigung
+    - Wo kann ich meine Immatriuklationsbescheinigung downloaded?
+    - Immatriuklationsbescheinigung
+    - Wo finde ich meine Immatriuklationsbescheinigung
+    - Wie krieg ich eine Immatriuklationsbescheinigung
+    - Wo kann ich eine Immatriuklationsbescheinigung beantragen
+    - Ich brauche eine Immatriuklationsbescheinigung
+    - Ich möchte eine Immatriuklationsbescheinigung
+    - Wo gibts eine Immatriuklationsbescheinigung
+    - Ich brauch eine Immatriuklationsbescheinigung für mein Bafög
+    - Ich brauch fürs Bafög eine Immatriuklationsbescheinigung
+    - Woher bekomm ich eine Bestätigung, dass ich student bin
+    - Ich brauch eine Bestätigung über mein Studium
+    - Ich möchte Bestätigen, dass ich studier
+    - Wie kann ich bestätigen, dass ich Immatrikuliert bin
+    - immatrikulationsbescheinigung
+- intent: intent_classes_earlier
+  examples: |
+    - Kann man Fächer vorziehen?
+    - Kann man Fächer früher belegen?
+    - Kann man Prüfungen früher ablegen?
+    - Kann ich Module vor schieben?
+    - Kann ich Prüfungen vorher schreiben?
+    - Ist es möglich Klausuren vorzuziehen?
+    - Kann ich Klausuren früher schreiben als angedacht?
+    - Kann ich Module früher belegen?
+    - Kann ich Fächer bereits früher schreiben als angedacht?
+    - Kann ich einen Kurs früher ablegen?
+    - Ist es möglich ein Modul früber abzulegen?
+    - Kann ich Klausuren von höheren Semestern ablegen?
+    - Darf ich Module aus höheren Semestern vorziehen?
+    - Kann ich Klausuren schreiben, obwohl ich noch in einem niedrigeren Semester bin?
+- intent: intent_eduroam
+  examples: |
+    - Was ist das Eduroam?
+    - Wie funktioniert das Eduroam?
+    - Wie melde ich mich in das Eduroam an?
+    - Wie logge ich mich am Eduroam an?
+    - Wie bekomme ich Zugriff auf das Eduroam?
+    - Login Eduroam?
+    - Wie kann ich mich mit dem WLAN verbinden?
+    - Was sind die Zugangsdaten zum Eduroam?
+    - Was sind die Zugangsdaten zum WLAN?
+    - Gibt es in der Hochschule Internet?
+    - Habe ich in der Hochschule Zugang zum Internet?
+    - Gibt es WLAN?
+    - Gibt es Internet an der Hochschule?
+    - eduroam
+- intent: intent_developer
+  examples: |
+    - Wer hat dich entwickelt?
+    - Wer hat dich erschaffen?
+    - Wer ist dein Schöpfer?
+    - Wie bist du entstanden?
+    - Wie wurdest du geamcht?
+    - Von wem wurdest du entwickelt?
+    - Wer hat dich gemacht?
+    - Wer ist dein Chef?
+    - Wer ist deine Chefin?
+    - Wer glaubst du ist dein Chef?
+    - Wer glaubst du ist dein Chefin?
+    - Wer ist dein Meister?
+    - Wer ist dein Besitzer?
+    - Wer ist der Boss
+    - Für wen arbeitest du?
+    - Wer ist dein Entwickler?
+    - Wer sind deine Entwickler?
+    - Wer sind dein Schöpfer?
+    - Wer besitzt dich
+    - Wer ist dein Trainer?
+    - Wer hat dich trainiert?
+    - Wer ist derjenige, der dich besitzt?
+    - Wer ist der Chef hier?
+    - Kennen Sie Ihren Chef?
+    - Kennst du deine Chefin?
+    - Kennst du deine Chefs?
+- intent: intent_costs
+  examples: |
+    - Wie hoch sind die Gebühren?
+    - Was kostet ein Studium an der Hochschule?
+    - Was kostet ein Studium an der Technischen Hochschule Nürnberg?
+    - Mit welchen Kosten muss ich rechnen?
+    - Was kostet die Hochschule?
+    - Was kostet ein Studium?
+    - Wie viel kostet ein Studium an der OHM?
+    - Wie viel Geld verlangt die OHM?
+    - Wie hoch sind die Studiengebühren?
+    - Was sind die Studiengebühren?
+    - Studiengebühren
+    - Wie viel Geld verlangt die Hochschule?
+    - Wie viel Geld muss ich bezahlen?
+    - Wie hoch ist der Semesterbeitrag?
+    - Wie viel muss ich pro Semester zahlen?
+    - Wie viel muss ich bezahlen?
+    - Wie viel kostet ein Studium?
+    - Wie viel Kostet das Studium?
+    - Was muss ich bezahlen?
+    - Kann ich mir das Studium leisten?
+    - Wie hoch sind die Studiengebühre?
+    - Wie viel kostet das Studium?
+    - Wie hoch sind heuer die Semestergebühren?
+    - Was kostet ein Studium an der Technischen Hochschule Nürnberg
+    - Semesterbeitrag
+- intent: intent_number_of_students
+  examples: |
+    - Wie viele Leute studieren an der Hochschule?
+    - Wie viele Studenten sind eingeschrieben?
+    - Wie viele Studenten hat die Hochschule?
+    - Hat die Hochschule viele Studenten?
+    - Wie hoch ist die Zahl der Studenten?
+    - Wie groß ist die Anzahl der Studenten an der Hochschule?
+    - Was ist die Anzahl der Studenten?
+    - Wurden die Studenten mal gezählt?
+    - Wie viele Studenten hat die Fakultät?
+    - Wie viele Studenten sind in der Informatik?
+    - Wie viele haben sich an der Hochschule neu eingeschrieben?
+    - Wie viele Erstsemester hat die Hochschule?
+    - Wie groß ist die Hochschule?
+    - Wie groß ist die Fakultät?
+- intent: intent_location_room
+  examples: |
+    - Wo ist Raum [HQ.209](room)?
+    - Wo ist [HQ.209](room)?
+    - Wo finde ich [HQ.209](room)?
+    - Wo befindet sich [HQ.209](room)?
+    - [HQ.209](room)?
+    - wo ist [HQ.01](room)
+    - Wo ist Raum [HQ.403](room)
+    - Wo ist Raum [HQ](room) 403?
+    - wo ist der raum [hq.011](room)?
+    - Wo ist [HQ.303](room)?
+- synonym: Hochschule
+  examples: |
+    - Technische Hochschule Nürnberg
+    - Technischen Hochschule Nürnberg
+    - Hochschule
+    - Georg Simon Ohm
+    - GSO
+    - OHM
+    - TH Nürnberg
+    - Hochschule Georg Simon Ohm
+    - Technische Hochschule Georg Simon Ohm
+- synonym: Immatriuklationsbescheinigung
+  examples: |
+    - Imma
+    - Immabescheinigung
+    - Immatriuklation
+- synonym: Informatik
+  examples: |
+    - Wirtschaftsinformatik
+    - Medieninformatik
+- synonym: Studiengang
+  examples: |
+    - Studiengang Informatik
+    - Studiengang Wirtschaftsinformatik
+    - Studiengang Medieninformatik
+    - Studium
+- regex: room
+  examples: |
+    - (KA|KV|KB|KC|KX|KS|KJ|KM|KH|KY|KT|KR|WA|WB|WD|WE|WG|WF|WK|BB|BG|BL|SD|SK|SC|SL|SG|SH8|SP|NP|SR|ST|HQ|HW)\.?\d{3}
